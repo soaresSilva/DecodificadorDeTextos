@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <link rel="stylesheet" href="style/reset.css">
     <link rel="stylesheet" href="style/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -11,27 +13,38 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
     <title>Decodificador</title>
 </head>
+
 <body>
+    <script src="script/script.js"></script>
     <header>
         <img class="logo" src="imgs/Vector.png" alt="">
     </header>
 
     <main>
 
-        <section>
+        <section class="conteudoPrincipal">
 
             <div class="entradaDeTexto">
 
-                <textarea placeholder="Digite seu texto" name="" id="texto"></textarea>
+                <textarea autofocus placeholder="Digite seu texto" name="textoDeEntrada" cols="25" rows="10" id="textoDeEntrada"></textarea>
 
             </div>
 
             <div class="botoes">
 
-                <p class="alerta"> <img class="icon" src="imgs/icon.png" alt=""> Apenas letras minúsculas e sem acento</p>
+                <div class="textoBotoes">
 
-                <button class="buttonCripto">Criptografar</button>
-                <button class="buttonDescripto">Descriptografar</button>
+                    <p class="alerta"> <img class="icon" src="imgs/icon.png" alt=""> Apenas letras minúsculas e sem
+                        acento</p>
+
+                </div>
+
+                <div class="divBotoes">
+
+                    <button class="buttonCripto">Criptografar</button>
+                    <button class="buttonDescripto">Descriptografar</button>
+
+                </div>
 
             </div>
 
@@ -39,9 +52,9 @@
 
         <aside>
 
-            <textarea class="textoReposta" name="" id=""></textarea>
+            <textarea class="textoReposta" name="" id="textoReposta"></textarea>
 
-            <img src="imgs/Fotolateral.png" alt="">
+            <img id="imgLateral" src="imgs/Fotolateral.png" alt="">
 
             <p class="textoMaior">
                 Nenhuma mensagem encontrada
@@ -51,10 +64,17 @@
                 Digite um texto que você deseja criptografar ou descriptografar
             </p>
 
-            <button>Copiar</button>
+            <button id="botaoCopiar">Copiar</button>
 
         </aside>
 
     </main>
+
+    <footer>
+
+        <p>Feito por Alisson</p>
+
+    </footer>
 </body>
+
 </html>

@@ -1,5 +1,5 @@
 body {
-    width: 940px;
+    width: 100%;
     background-color: #E5E5E5;
     font-family: 'Inter', sans-serif;
     color: #0A3871;
@@ -13,14 +13,13 @@ body {
 
 main {
     display: flex;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     margin: 0 20%;
 }
 
-.conteudoPrincipal {
-    margin-right: 10%;
-    border: 1px solid black;
-}
+/* .conteudoPrincipal {
+    float: right;
+} */
 
 textarea {
     border: none;
@@ -34,14 +33,11 @@ textarea:focus {
     outline: none;
 }
 
-.entradaDeTexto{
-    /* margin-bottom: 200px; */
-}
-
 #textoDeEntrada {
     background-color: #E5E5E5;
     font-weight: 400;
-    border: 1px solid black;
+    color: #0A3871;
+    /* border: 1px solid black; */
 }
 
 ::placeholder{
@@ -57,20 +53,24 @@ textarea:focus {
     font-size: 12px;
 }
 
-
+.divBotoes{
+    display: flex;
+}
 
 button {
     font-size: 16px;
-    width: 50%;
+    width: 30%;
     padding: 24px;
     border-radius: 24px;
-
+    width: 50%;
+    margin: 10px;
 }
 
 .buttonCripto {
     background-color: #0A3871;
     color: white;
     border: none;
+    margin-right: 30px;
     box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.218);
 }
 
@@ -79,28 +79,30 @@ button {
     color: rgba(249, 249, 249, 0.814);
 }
 
-.buttonDescripto {
+.buttonDescripto, .botaoCopiar {
     background-color: #D8DFE8;
     color: #0A3871;
     border: none;
     box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.2);
 }
 
-.buttonDescripto:active {
+.buttonDescripto:active, .botaoCopiar:active {
     color: #0e386dd0;
     box-shadow: inset 0px 0px 10px 1px rgba(0, 0, 0, 0.16);
 }
 
 aside {
-    position: relative;
-    width: 400px;
     background-color: white;
     color: #343A40;
     text-align: center;
+    padding: 20px;
+    border-radius: 24px;
+    margin-left: 150px;
 }
 
 .textoReposta {
     background-color: white;
+    font-size: 24px;
 }
 
 .textoMaior {
@@ -113,4 +115,9 @@ aside {
 .textoMenor {
     /* width: 80%; */
     margin: 0 auto;
+}
+
+.botaoCopiar {
+    background-color: white;
+    margin-bottom: 0;
 }

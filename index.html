@@ -25,7 +25,8 @@
 
             <div class="entradaDeTexto">
 
-                <textarea autofocus placeholder="Digite seu texto" name="textoDeEntrada" cols="25" rows="10" id="textoDeEntrada"></textarea>
+                <textarea autofocus placeholder="Digite seu texto" name="textoDeEntrada" cols="25" rows="10"
+                    id="textoDeEntrada"></textarea>
 
             </div>
 
@@ -51,19 +52,23 @@
 
         <aside>
 
-            <textarea class="textoReposta" name="" id="textoReposta"></textarea>
+            <textarea class="textoReposta" name=""></textarea>
 
-            <img id="imgLateral" src="imgs/Fotolateral.png" alt="">
+            <div id="esconder">
 
-            <p class="textoMaior">
-                Nenhuma mensagem encontrada
-            </p>
+                <img id="imgLateral" src="imgs/Fotolateral.png" alt="">
 
-            <p class="textoMenor">
-                Digite um texto que você deseja criptografar ou descriptografar
-            </p>
+                <p class="textoMaior">
+                    Nenhuma mensagem encontrada
+                </p>
 
-            <button class="botaoCopiar">Copiar</button>
+                <p class="textoMenor">
+                    Digite um texto que você deseja criptografar ou descriptografar
+                </p>
+
+            </div>
+
+            <button id="copy" class="botaoCopiar">Copiar</button>
 
         </aside>
 
@@ -77,4 +82,5 @@
 </body>
 
 <script src="script/script.js"></script>
+
 </html>
